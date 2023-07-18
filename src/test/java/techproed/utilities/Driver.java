@@ -3,6 +3,8 @@ package techproed.utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 
@@ -33,10 +35,33 @@ olanak saglayan yazilim test yontemidir. TestNG de ve Cucumber'da POM kalibini k
         Driver'i her cagirdigimizda yeni bir pencere acilmasinin onune gecmek icin if blogu icinde , eger driver'a
         deger atanmamissa deger ata, eger driver'a deger atanmissa driver'i ayni sayfada return et.
          */
+
+        /*
+            Properties dosyasinda key olarak belirttigimiz browsers'a asagidaki ornekteki gibi hangi
+            degerleri belirtirsek testlerimiz o browser ile calisir.
+         */
+
         if (driver==null){
 
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            switch (ConfigReader.getProperty("browser")){
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+                case "safari":
+                    WebDriverManager.safaridriver().setup();
+                    driver = new SafariDriver();
+                    break;
+                default://eger yanlis deger girerse de chorome olarak calistirsin
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+            }
+
+
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
