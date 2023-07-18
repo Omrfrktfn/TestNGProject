@@ -16,12 +16,15 @@ public class C02_PageKullanimi {
         ReusableMethods.wait(1);
 
 
-        OpenSourcePageClass.userName().sendKeys(ConfigReader.getProperty("userName"));
+        OpenSourcePageClass.userName().sendKeys(ConfigReader.getProperty("username"));
         ReusableMethods.wait(1);
         OpenSourcePageClass.password().sendKeys(ConfigReader.getProperty("password"));
         ReusableMethods.wait(1);
         OpenSourcePageClass.loginButton().click();
 
+        Assert.assertTrue(OpenSourcePageClass.verify().isDisplayed());
+
+        Driver.closeDriver();
 
 
 
