@@ -11,7 +11,7 @@ import techproed.utilities.ReusableMethods;
 public class C01_NegatifTest {
 
 
-    @Test
+    @Test(groups = "smoke")
     public void test01() {
         //Description:
 //Kullanimda olmayan kullanıcı adi ve şifre ile giriş yapilamamali
@@ -30,7 +30,10 @@ public class C01_NegatifTest {
         ReusableMethods.wait(1);
         blueRentalPage.email.sendKeys(ConfigReader.getProperty("fakeEmail"), Keys.TAB,
                 ConfigReader.getProperty("fakePassword"), Keys.ENTER);
-        ReusableMethods.wait(1);
+        ReusableMethods.wait(3);
         Assert.assertTrue(blueRentalPage.wrongVerify.isDisplayed());
+        Driver.closeDriver();
+
     }
+
 }

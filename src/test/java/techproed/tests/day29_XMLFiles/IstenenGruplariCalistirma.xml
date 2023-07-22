@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Istenen Gruplari Calistirma">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+
+            <class name="techproed.tests.day26_PagesKullanimi.C04_PozitifTest"> </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest"> </class>
+
+        </classes>
+    </test>
+</suite>
+
+        <!--
+        XML file ile istenilen gruplari calistirmak istersek <groups> tagindan sonra <run> tagi ile
+        test class'imizda @Test notasyonumuzdan sonra belirttigimiz group ismini <include> tagi ile belirtiriz.
+        Sonra Bu testler hangi classicerisinde ise onlari belirtiriz.
+        -->
