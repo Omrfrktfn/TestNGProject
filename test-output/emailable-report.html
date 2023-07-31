@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">3</td><td class="numi_attn">3</td><td class="numi">40,5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">techproed.tests.day30_Listeners.C02_ListenersTest02</td><td><a href="#m1"><b>test04</b>  </a></td><td class="numi">1</td><td>1690798105863</td><td class="numi">18366</td></tr><tr class="failedodd"><td><a href="#m2"><b>test02</b>  </a></td><td class="numi">1</td><td>1690798093970</td><td class="numi">3</td></tr><tr class="failedodd"><td><a href="#m3"><b>test02</b>  </a></td><td class="numi">1</td><td>1690798093970</td><td class="numi">3</td></tr>
+<tr><th colspan="5">C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="3">techproed.tests.day30_Listeners.C02_ListenersTest02</td><td><a href="#m4"><b>test02</b>  </a></td><td class="numi">1</td><td>1690798093927</td><td class="numi">38</td></tr><tr class="skippedodd"><td><a href="#m5"><b>test03</b>  </a></td><td class="numi">1</td><td>1690798105858</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m6"><b>test02</b>  </a></td><td class="numi">1</td><td>1690798093927</td><td class="numi">38</td></tr>
+<tr><th colspan="5">C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java &#8212; passed</th></tr>
+<tr class="passedodd"><td>techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest</td><td><a href="#m7"><b>test01</b> (smoke) </a></td><td class="numi">1</td><td>1690798125415</td><td class="numi">8725</td></tr>
+<tr class="passedeven"><td>techproed.tests.day30_Listeners.C02_ListenersTest02</td><td><a href="#m8"><b>test01</b>  </a></td><td class="numi">1</td><td>1690798093883</td><td class="numi">29</td></tr>
+</table>
+<h1>C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java</h1>
+<h2 id="m1">techproed.tests.day30_Listeners.C02_ListenersTest02:test04</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#fajflksafjlsakj&quot;}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d155b114e3d7050f5b242544a8222ac8, findElement {using=id, value=fajflksafjlsakj}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Omer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53406}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53406/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d155b114e3d7050f5b242544a8222ac8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at techproed.tests.day30_Listeners.C02_ListenersTest02.test04(C02_ListenersTest02.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">techproed.tests.day30_Listeners.C02_ListenersTest02:test02</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at techproed.tests.day30_Listeners.C02_ListenersTest02.test02(C02_ListenersTest02.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">techproed.tests.day30_Listeners.C02_ListenersTest02:test03</h2>
+<div>
+<div class="stacktrace">org.testng.SkipException: Bu method atlandi
+	at techproed.tests.day30_Listeners.C02_ListenersTest02.test03(C02_ListenersTest02.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">techproed.tests.day30_Listeners.C02_ListenersTest02:test02</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at techproed.tests.day30_Listeners.C02_ListenersTest02.test02(C02_ListenersTest02.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest:test01</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">techproed.tests.day30_Listeners.C02_ListenersTest02:test01</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

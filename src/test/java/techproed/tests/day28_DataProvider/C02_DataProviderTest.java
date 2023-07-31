@@ -35,7 +35,7 @@ public class C02_DataProviderTest {
         googlePage.searchBox.submit();
         ReusableMethods.wait(3);
         //Her arama için sayfa resmi alalım
-        ReusableMethods.tumSayfaResmi();
+        ReusableMethods.tumSayfaResmi(araclar);
         //Sayfayı kapatalım
         Driver.closeDriver();
 

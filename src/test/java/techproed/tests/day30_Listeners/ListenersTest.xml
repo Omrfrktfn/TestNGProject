@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="techproed.utilities.Listeners"/>
+    </listeners>
+    <test name="C:/Users/Omer/IdeaProjects/TestNGProject/src/test/java/techproed/tests/day30_Listeners/C02_ListenersTest02.java">
+        <classes>
+            <class name="techproed.tests.day30_Listeners.C02_ListenersTest02">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest"></class>
+        </classes>
+    </test>
+</suite>
+        <!-- Listeners'i .xml file ile farklı method ve classlar için kullanmak istersek 
+         Suite tag'ından sonra listeners tag'ı sonrasında listener tag'i ile listener class'ının yolunu belirtiyoruz
+         Listeners ile kolay raporlamalar alabiliriz bunun icin .xml file uzerinde sag clik yapip modifiyRunConfiguration
+         secenegine tiklayip listeners bolumunden raporlamalari secebiliriz.
+         -->
